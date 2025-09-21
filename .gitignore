@@ -1,16 +1,20 @@
-HELP.md
-build/
-!**/src/main/**
-!**/src/test/**
+# === Java / Gradle / IntelliJ IDEA ===
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+/.idea/
+/*.iml
 *.iws
-*.iml
 *.ipr
 
-### Gradle ###
-.gradle
+# Gradle
+.gradle/
+/build/
 
-### Logs ###
+# Logs
 *.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+out/
