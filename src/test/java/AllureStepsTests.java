@@ -1,6 +1,5 @@
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,6 +11,8 @@ public class AllureStepsTests extends TestBase {
     @Test
     @Feature("Разделы в репозитории")
     @Story("Взаимодействие с Issue")
+    @Owner("Zuckerberg")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка наличия раздела Issue ")
 
     public void testAnnotatedStep() {
