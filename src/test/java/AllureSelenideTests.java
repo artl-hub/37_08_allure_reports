@@ -1,6 +1,9 @@
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -10,6 +13,10 @@ import static com.codeborne.selenide.Selenide.*;
 public class AllureSelenideTests extends TestBase {
 
     @Test
+    @Feature("Разделы в репозитории")
+    @Story("Взаимодействие с Issue")
+    @DisplayName("Проверка наличия раздела Issue ")
+
     public void testIssueSearch() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
