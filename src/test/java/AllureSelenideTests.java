@@ -31,16 +31,8 @@ public class AllureSelenideTests extends TestBase {
         $("#issues-tab").shouldHave(text("Issues"));
 
 
-//
-
     }
 
 
-
-
-
-
-
-
-        }
+}
 
