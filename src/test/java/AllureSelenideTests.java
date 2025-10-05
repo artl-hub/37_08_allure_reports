@@ -21,7 +21,7 @@ public class AllureSelenideTests extends TestBase {
     public void testIssueSearch() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        open("https://github.com/");
+        open("");
 
         $("button[aria-label='Search or jump to…']").click();
         $("#query-builder-test").sendKeys("artl-hub");

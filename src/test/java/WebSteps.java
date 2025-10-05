@@ -4,10 +4,10 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class WebSteps {
+public class WebSteps extends TestBase{
     @Step("Открываем главную страницу")
     public void openMainPage() {
-        open("https://github.com/");
+        open("");;
     }
 
     @Step("Ищем репозиторий {repo}")

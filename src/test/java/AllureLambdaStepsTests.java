@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class AllureLambdaStepsTests {
+public class AllureLambdaStepsTests extends TestBase {
     private static final String REPOSITORY = "artl-hub";
     private static final String ISSUE_SECTION = "Issues";
 
@@ -24,8 +24,9 @@ public class AllureLambdaStepsTests {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Открываем главную страницу", () -> {
-            open("https://github.com/");
+            open("");
         });
+
 
         step("Ищем репозиторий", () -> {
             $("button[aria-label='Search or jump to…']").click();

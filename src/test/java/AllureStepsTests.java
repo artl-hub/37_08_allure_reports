@@ -19,7 +19,6 @@ public class AllureStepsTests extends TestBase {
         SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps steps = new WebSteps();
 
-
         steps.openMainPage();
         steps.searchForRepository(REPOSITORY);
         steps.clickOnRepositoryLink(REPOSITORY);
